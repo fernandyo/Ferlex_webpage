@@ -1,0 +1,168 @@
+.header_flex{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.logo_flex{
+    display: flex;
+    flex: 1;
+    /*background-color: aquamarine;*/
+    max-width: 230px;
+    min-width: 120px;
+    margin-left: 10px;
+    z-index: 100;
+}
+
+.ferlex_icono{
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1px 10px 1px 10px;
+    margin: 7px 0 7px 0px;
+    z-index: 100;
+}
+
+.button_section_flex{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    /*background-color: pink;*/
+    justify-content: space-evenly;
+    align-items: end;
+    max-width: 700px;
+    min-width: 0px;
+    padding-bottom: 10px;
+    z-index: 100;
+}
+
+.button_highlight{
+    position: relative;
+
+    width: fit-content;
+    height: 35px;
+
+    padding-left: 40px;
+
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0px;
+
+    color: white;
+    text-align: right;
+    
+    font-size: 16px;
+    
+    transition: background-color .3s;
+    z-index: 100;
+}
+
+.button_highlight:hover{
+    cursor: pointer;
+}
+
+.whatsapp_icon,
+.facebook_icon,
+.gmail_icon{
+    position: absolute;
+}
+
+.button_section_flex a{
+    min-width: 0px;
+    text-align: center;
+}
+
+#whatsapp_button{
+    background-color: #51cd5e;
+    min-width: 0;
+    
+}
+
+#whatsapp_button:hover{
+    background-color: #92e99b;
+}
+
+.whatsapp_icon{
+    width: 42px;
+    top: -3px;
+    left: -5px;
+}
+
+#facebook_button{
+    background-color: #3c5a9a;
+    min-width: 0;
+}
+
+#facebook_button:hover{
+    background-color: #5f8ef3;
+}
+
+.facebook_icon{
+    width: 35px;
+    top: 0px;
+    left: -5px;
+}
+
+#gmail_button{
+    background:color white;
+    color: black;
+    min-width: 0;
+}
+
+#gmail_button:hover{
+    background:color rgb(189, 189, 189);
+}
+
+.gmail_icon{
+    width: 22px;
+    top: 9px;
+    left: 7px;
+}
+
+@media (min-width: 535px) and (max-width: 694px){
+    .button_section_flex .button_highlight{
+      
+        font-size: 10px;
+        height: 30px;
+    }
+
+    #gmail_button .gmail_icon{
+        width: 17px;
+    }
+
+    #facebook_button .facebook_icon{
+        width: 30px;
+    }
+
+    #whatsapp_button .whatsapp_icon{
+        width: 36px;
+    }
+}
+
+@media (max-width: 534px){
+    .button_section_flex .button_highlight{
+        max-width: 20px;
+        font-size: 0px;
+        height: 20px;
+    }
+
+    #gmail_button .gmail_icon{
+        width: 10px;
+        top: 7px;
+    }
+
+    #facebook_button .facebook_icon{
+        width: 20px;
+    }
+
+    #whatsapp_button .whatsapp_icon{
+        width: 26px;
+    }
+
+}
